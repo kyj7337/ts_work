@@ -1,13 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Main from './View/Main/Main';
+import { Main, Contact } from './View/index';
+import Layout from './Layout';
 import './App.css';
 
 function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route exact path="/" component={Main} />
+				<Layout>
+					<Route exact path="/" component={Main} />
+					<Route path="/contact" component={Contact} />
+				</Layout>
 			</Switch>
 		</Router>
 	);

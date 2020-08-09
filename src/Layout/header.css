@@ -1,0 +1,11 @@
+.header-view{min-height: 100px;}
+.header-view .inner-header-view{width: 100%; max-width: 1200px; margin: 0 auto;  padding: 10px;display: flex; justify-content: space-between;}
+.header-view .inner-header-view .header-logo{width: 100px;}
+.header-view .inner-header-view .menu-txt{display: flex; align-items: center; width: 100%; max-width: 400px;}
+.header-view .inner-header-view .menu-txt .for-space{display: flex; justify-content: space-around; width: 100%;}
+.header-view .inner-header-view .menu-txt .for-space .tab{ padding: 10px 20px; border-bottom: 1px solid #fff;}
+.header-view .inner-header-view .menu-txt .for-space .tab:hover{border-bottom: 1px solid orangered; }
+@media screen and (max-width:500px){
+    .header-view{min-height: 50px;}
+.header-view .inner-header-view{}
+}
