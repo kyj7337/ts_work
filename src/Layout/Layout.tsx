@@ -12,6 +12,7 @@ type LayoutProps = {
 type Props = {};
 
 const basicLayout = ({ children }: LayoutProps) => {
+	// console.log(children);
 	return (
 		<Layout style={{ minHeight: '100vh' }}>
 			<Header />

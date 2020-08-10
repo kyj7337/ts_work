@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { compose } from 'recompose';
+import { withRouter } from 'react-router-dom';
 import { Modal, Menu, Drawer } from 'antd';
 import {
 	LogoutOutlined,
@@ -27,7 +29,9 @@ const Header = () => {
 				<div className="menu-txt">
 					<div className="for-space">
 						<span className="tab">홈</span>
-						<span className="tab">상세</span>
+						<span className="tab">
+							<a href="/counter">ts-redux</a>
+						</span>
 						<span className="tab">연락</span>
 						<span className="tab">잇스토어 클론하기</span>
 					</div>
@@ -37,4 +41,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default compose(withRouter)(Header);
